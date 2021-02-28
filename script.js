@@ -70,10 +70,10 @@ function changeVolume(){
     let videoVol = video.getAttribute('volume')
     video.volume = (volume.value)/100
     console.log((volume.value)/100)
-    text.innerText = video.volume*100 +'%' 
+text.innerText = Math.ceil(video.volume*100) +'%' 
 }
 
-text.innerText = Math.ceil(video.volume*100) +'%' 
+
 
 function progressLoop() {
     setInterval(function () {
